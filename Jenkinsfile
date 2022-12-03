@@ -16,12 +16,19 @@ node {
        
                 }                 
 
-       }
-}
-
-post {
-        always {
-          junit skipPublishingchecks:true,testResults:
-'*/cpputest_xml'                  
+                post {
+                        always {
+                          junit skipPublishingChecks:true,testResults:
+                '*/cpputest_xml'
+                        }
+                           
+                }
+             
+                
+                
+                }
+         
         }
+        
+        
 }
